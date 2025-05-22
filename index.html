@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Modern Site</title>
+  <style>
+    :root {
+      --primary-yellow: #FFD700;
+      --dark-black: #111;
+      --light-white: #fff;
+      --gray-text: #555;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: var(--dark-black);
+      background-color: var(--light-white);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark-black);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: var(--light-white);
+      font-size: 24px;
+    }
+
+    nav a {
+      color: var(--primary-yellow);
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      background-color: var(--light-white);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 span {
+      color: var(--primary-yellow);
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--gray-text);
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: var(--primary-yellow);
+      color: var(--dark-black);
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #e6c200;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 30px;
+      background-color: #fafafa;
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      width: 280px;
+      text-align: center;
+    }
+
+    .service-box h3 {
+      color: var(--primary-yellow);
+      margin-bottom: 10px;
+    }
+
+    .service-box p {
+      color: var(--gray-text);
+    }
+
+    footer {
+      background-color: var(--dark-black);
+      color: var(--light-white);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>W1Marketing</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to <span>W1 Marketing</Wbr></span></h2>
+    <p>W1Marketing 是一家领先的创新营销解决方案提供商，专注于利用 WhatsApp 的强大功能，帮助企业高效地触达并吸引目标受众。
+    </p>
+    <p>W1Marketing is a leading provider of innovative marketing solutions, specializing in leveraging the power of WhatsApp to help businesses reach and engage their target audience effectively.</p>
+  </section>
+
+  <img src="Web-01.png" alt="一只可爱的熊猫" width="100%" height="auto-fit">
+
+  <section class="service-options" id="advanced-services">
+    <h1 style="text-align:center; font-size:32px;">OUR SERVICES</h1>
+    <h2 style="text-align:center; font-size:32px; margin-bottom:40px;color: #555;">我们提供的服务</h2>
+    <div class="option-grid">
+      <style>
+        .option-card a {
+          color: #ffd900;
+          text-decoration: none;
+      </style>
+      <div class="option-card">📡
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer"> 国际短信营销 (SMS)</a>
+      </div>
+      <div class="option-card">📡 
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer"> 国际版 TikTok 广告</a>
+      </div>
+      <div class="option-card">📡 
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer"> 国际版 Facebook 广告</a>
+      </div>
+      <div class="option-card">📡
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer">  AI 广告视频制作</a>
+      </div>
+      <div class="option-card">📡 
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer">Telegram 群组推广服务</a>
+      </div>
+      <div class="option-card">📡 
+        <a href="https://t.me/marketingteam01" target="_blank"rel="noopener noreferrer"> FB/Ins/Telegram<br/>机器人刷分享/点赞/评论/进群</a></div>
+    </div>
+  </section>
+
+  <style>.service-options {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: var(--dark-black);
+  }
+  
+  .option-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .option-card {
+    background-color: #111;
+    color: #FFD700;
+    padding: 30px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  }
+  </style>
+
+  <footer>
+    &copy; 2025 MyBrand. All rights reserved.
+  </footer>
+
+</body>
+</html>
